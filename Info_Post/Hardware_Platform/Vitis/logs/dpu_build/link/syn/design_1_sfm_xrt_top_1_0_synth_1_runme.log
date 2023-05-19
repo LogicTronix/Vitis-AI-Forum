@@ -1,0 +1,829 @@
+
+*** Running vivado
+    with args -log design_1_sfm_xrt_top_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_sfm_xrt_top_1_0.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_sfm_xrt_top_1_0.tcl -notrace
+INFO: Dispatch client connection id - 44115
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1728.145 ; gain = 87.992 ; free physical = 3434 ; free virtual = 15703
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_sfm_xrt_top_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_DPUCZDX8G_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/logictronix/ML_WORKSPACE/Xilinx/Vitis/2022.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/logictronix/ML_WORKSPACE/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_sfm_xrt_top_1_0
+Command: synth_design -top design_1_sfm_xrt_top_1_0 -part xczu9eg-ffvb1156-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12170
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/media/logictronix/ML_WORKSPACE/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-6901] identifier 'FLT_PT_IMP_LOGIC' is used before its declaration [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/2a23/src/DPUCZDX8G_v4_1_0_vl_sfm.sv:3229]
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/2a23/src/DPUCZDX8G_v4_1_0_vl_sfm.sv:3697]
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/2a23/src/DPUCZDX8G_v4_1_0_vl_sfm.sv:3698]
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/2a23/src/DPUCZDX8G_v4_1_0_vl_sfm.sv:3701]
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/2a23/src/DPUCZDX8G_v4_1_0_vl_sfm.sv:3702]
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/2a23/src/DPUCZDX8G_v4_1_0_vl_sfm.sv:3715]
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/2a23/src/DPUCZDX8G_v4_1_0_vl_sfm.sv:3718]
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/2a23/src/DPUCZDX8G_v4_1_0_vl_sfm.sv:3719]
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/2a23/src/DPUCZDX8G_v4_1_0_vl_sfm.sv:3719]
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/2a23/src/DPUCZDX8G_v4_1_0_vl_sfm.sv:3720]
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/2a23/src/DPUCZDX8G_v4_1_0_vl_sfm.sv:3720]
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/2a23/src/DPUCZDX8G_v4_1_0_vl_sfm.sv:3722]
+INFO: [Synth 8-11241] undeclared symbol 'op_state', assumed default net type 'wire' [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/2a23/src/DPUCZDX8G_v4_1_0_vl_sfm.sv:7712]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2938.020 ; gain = 243.797 ; free physical = 460 ; free virtual = 12747
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2159.232; parent = 2022.446; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3931.203; parent = 2943.961; children = 987.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_sfm_xrt_top_1_0' [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_sfm_xrt_top_1_0/synth/design_1_sfm_xrt_top_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'DSP48E2' [/media/logictronix/ML_WORKSPACE/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:37582]
+INFO: [Synth 8-6155] done synthesizing module 'DSP48E2' (0#1) [/media/logictronix/ML_WORKSPACE/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:37582]
+INFO: [Synth 8-6157] synthesizing module 'DSP48E2__parameterized0' [/media/logictronix/ML_WORKSPACE/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:37582]
+INFO: [Synth 8-6155] done synthesizing module 'DSP48E2__parameterized0' (0#1) [/media/logictronix/ML_WORKSPACE/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:37582]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_sfm_xrt_top_1_0' (0#1) [/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_sfm_xrt_top_1_0/synth/design_1_sfm_xrt_top_1_0.v:53]
+WARNING: [Synth 8-7129] Port M_AXI_bresp[1] in module AXI_wr_m is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_bresp[0] in module AXI_wr_m is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module ram_s2p1c_sm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port NORMALIZE[1] in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIXED_POINT in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIX_MANT_SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized48 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized86 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized83 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized82 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized81 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized80 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module flt_special_detect is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROUND_EXP_INC in module flt_div_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized78 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_div_mant_addsub is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ND in module flt_div_mant is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_MANT[23] in module flt_div_mant is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized76 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized76 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay_1__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay_1__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay_dynamic__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized74 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay_dynamic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized71 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized69 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized69 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay_dynamic__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized66 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized66 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized65 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized65 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized63 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module flt_special_detect__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized59 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized59 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized62 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flt_delay__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module flt_delay__parameterized61 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port subtract_op[5] in module flt_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port subtract_op[4] in module flt_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port subtract_op[3] in module flt_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port subtract_op[2] in module flt_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port subtract_op[1] in module flt_accum is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3069.926 ; gain = 375.703 ; free physical = 195 ; free virtual = 12472
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2286.732; parent = 2149.950; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4057.172; parent = 3069.930; children = 987.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3087.738 ; gain = 393.516 ; free physical = 235 ; free virtual = 12513
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2286.732; parent = 2149.950; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4074.984; parent = 3087.742; children = 987.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3087.738 ; gain = 393.516 ; free physical = 221 ; free virtual = 12500
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2286.732; parent = 2149.950; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4074.984; parent = 3087.742; children = 987.242
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.35 . Memory (MB): peak = 3093.676 ; gain = 0.000 ; free physical = 156 ; free virtual = 12122
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3176.586 ; gain = 0.000 ; free physical = 163 ; free virtual = 11828
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 7 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.48 . Memory (MB): peak = 3200.398 ; gain = 23.812 ; free physical = 174 ; free virtual = 11773
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/media/logictronix/ML_WORKSPACE/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 3200.398 ; gain = 506.176 ; free physical = 177 ; free virtual = 11681
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2286.732; parent = 2149.950; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4187.645; parent = 3200.402; children = 987.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 3200.398 ; gain = 506.176 ; free physical = 175 ; free virtual = 11679
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2286.732; parent = 2149.950; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4187.645; parent = 3200.402; children = 987.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 3200.398 ; gain = 506.176 ; free physical = 164 ; free virtual = 11668
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2286.732; parent = 2149.950; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4187.645; parent = 3200.402; children = 987.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'sfm_regs1'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'sfm_regs1'
+INFO: [Synth 8-802] inferred FSM for state register 'load_axi_state_reg' in module 'AXI_rd_m'
+INFO: [Synth 8-802] inferred FSM for state register 'calc_state_reg' in module 'softmax_calc_m'
+INFO: [Synth 8-802] inferred FSM for state register 'save_axi_state_reg' in module 'AXI_wr_m'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  WRIDLE |                              001 |                               00
+                  WRDATA |                              010 |                               01
+                  WRRESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'sfm_regs1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  RDIDLE |                                0 |                               00
+                  RDDATA |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'sequential' in module 'sfm_regs1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               LOAD_idle |                              000 |                              000
+               LOAD_addr |                              001 |                              001
+              LOAD_first |                              010 |                              010
+             LOAD_middle |                              011 |                              011
+               LOAD_last |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'load_axi_state_reg' using encoding 'sequential' in module 'AXI_rd_m'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CALC_idle |                                0 |                               00
+               CALC_feed |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'calc_state_reg' using encoding 'sequential' in module 'softmax_calc_m'
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "ram_s2p1c_sm:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "ram_s2p1c_sm:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "ram_s2p1c_sm:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 20 for RAM "ram_s2p1c_sm:/ram_reg"
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               SAVE_idle |                              000 |                              000
+               SAVE_addr |                              001 |                              001
+              SAVE_first |                              010 |                              010
+             SAVE_middle |                              011 |                              011
+               SAVE_last |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'save_axi_state_reg' using encoding 'sequential' in module 'AXI_wr_m'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 3200.398 ; gain = 506.176 ; free physical = 145 ; free virtual = 11198
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2286.732; parent = 2149.950; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4187.645; parent = 3200.402; children = 987.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'flt_convert:/flt_fix_to_flt_conv_inst/renorm_and_round_logic/delay_extra_lsb_bit' (flt_delay__parameterized4) to 'flt_convert:/flt_fix_to_flt_conv_inst/renorm_and_round_logic/delay_extra_lsb_rnd1'
+INFO: [Synth 8-223] decloning instance 'flt_convert:/flt_fix_to_flt_conv_inst/renorm_and_round_logic/delay_exp_inc_rnd2' (flt_delay__parameterized4) to 'flt_convert:/flt_fix_to_flt_conv_inst/renorm_and_round_logic/delay_exp_inc_rnd1'
+INFO: [Synth 8-223] decloning instance 'flt_exp:/flt_exp_wrapper_inst/renorm_and_round_logic/delay_extra_lsb_bit' (flt_delay__parameterized4) to 'flt_exp:/flt_exp_wrapper_inst/renorm_and_round_logic/delay_extra_lsb_rnd1'
+INFO: [Synth 8-223] decloning instance 'flt_exp:/flt_exp_wrapper_inst/renorm_and_round_logic/delay_exp_inc_rnd2' (flt_delay__parameterized4) to 'flt_exp:/flt_exp_wrapper_inst/renorm_and_round_logic/delay_exp_inc_rnd1'
+INFO: [Synth 8-223] decloning instance 'flt_add:/flt_add_logic/flt_norm_and_round_logic/flt_renorm_and_round_logic/delay_extra_lsb_bit' (flt_delay__parameterized4) to 'flt_add:/flt_add_logic/flt_norm_and_round_logic/flt_renorm_and_round_logic/delay_extra_lsb_rnd1'
+INFO: [Synth 8-223] decloning instance 'flt_div:/flt_div_wrapper_u/flt_renorm_and_round_logic/delay_extra_lsb_bit' (flt_delay__parameterized4) to 'flt_div:/flt_div_wrapper_u/flt_renorm_and_round_logic/delay_extra_lsb_rnd1'
+INFO: [Synth 8-223] decloning instance 'flt_div:/flt_div_wrapper_u/flt_renorm_and_round_logic/delay_exp_inc_rnd2' (flt_delay__parameterized4) to 'flt_div:/flt_div_wrapper_u/flt_renorm_and_round_logic/delay_exp_inc_rnd1'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   40 Bit       Adders := 2     
+	   2 Input   36 Bit       Adders := 4     
+	   3 Input   36 Bit       Adders := 4     
+	   2 Input   35 Bit       Adders := 4     
+	   3 Input   34 Bit       Adders := 4     
+	   2 Input   33 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 7     
+	   3 Input   26 Bit       Adders := 4     
+	   3 Input   25 Bit       Adders := 104   
+	   2 Input   25 Bit       Adders := 1     
+	   3 Input   21 Bit       Adders := 1     
+	   3 Input   20 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 1     
+	   3 Input   18 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 6     
+	   3 Input   16 Bit       Adders := 1     
+	   3 Input   14 Bit       Adders := 6     
+	   2 Input   13 Bit       Adders := 15    
+	   3 Input   13 Bit       Adders := 27    
+	   2 Input   12 Bit       Adders := 5     
+	   2 Input   11 Bit       Adders := 4     
+	   3 Input   10 Bit       Adders := 5     
+	   2 Input   10 Bit       Adders := 10    
+	   3 Input    9 Bit       Adders := 6     
+	   2 Input    9 Bit       Adders := 8     
+	   3 Input    8 Bit       Adders := 19    
+	   2 Input    8 Bit       Adders := 20    
+	   2 Input    7 Bit       Adders := 2     
+	   3 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 3     
+	   3 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 22    
+	   3 Input    4 Bit       Adders := 36    
+	   3 Input    3 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
+	   3 Input    2 Bit       Adders := 34    
+	   2 Input    2 Bit       Adders := 6     
++---XORs : 
+	   2 Input     13 Bit         XORs := 12    
+	   2 Input      4 Bit         XORs := 43    
+	   2 Input      2 Bit         XORs := 27    
+	   2 Input      1 Bit         XORs := 22    
++---Registers : 
+	              128 Bit    Registers := 5     
+	               97 Bit    Registers := 2     
+	               96 Bit    Registers := 1     
+	               52 Bit    Registers := 1     
+	               48 Bit    Registers := 4     
+	               43 Bit    Registers := 4     
+	               40 Bit    Registers := 6     
+	               36 Bit    Registers := 4     
+	               34 Bit    Registers := 12    
+	               33 Bit    Registers := 12    
+	               32 Bit    Registers := 27    
+	               27 Bit    Registers := 7     
+	               26 Bit    Registers := 11    
+	               25 Bit    Registers := 114   
+	               24 Bit    Registers := 4     
+	               23 Bit    Registers := 67    
+	               22 Bit    Registers := 11    
+	               21 Bit    Registers := 4     
+	               20 Bit    Registers := 3     
+	               19 Bit    Registers := 4     
+	               18 Bit    Registers := 3     
+	               17 Bit    Registers := 8     
+	               16 Bit    Registers := 24    
+	               15 Bit    Registers := 4     
+	               14 Bit    Registers := 10    
+	               13 Bit    Registers := 13    
+	               12 Bit    Registers := 34    
+	               11 Bit    Registers := 10    
+	               10 Bit    Registers := 17    
+	                9 Bit    Registers := 23    
+	                8 Bit    Registers := 135   
+	                7 Bit    Registers := 10    
+	                6 Bit    Registers := 12    
+	                5 Bit    Registers := 10    
+	                4 Bit    Registers := 78    
+	                3 Bit    Registers := 54    
+	                2 Bit    Registers := 123   
+	                1 Bit    Registers := 1293  
++---RAMs : 
+	             128K Bit	(1024 X 128 bit)          RAMs := 1     
++---Muxes : 
+	   4 Input  128 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 3     
+	   4 Input   97 Bit        Muxes := 4     
+	   4 Input   96 Bit        Muxes := 4     
+	   2 Input   95 Bit        Muxes := 2     
+	   5 Input   40 Bit        Muxes := 2     
+	  17 Input   36 Bit        Muxes := 8     
+	   2 Input   36 Bit        Muxes := 8     
+	   4 Input   34 Bit        Muxes := 12    
+	   2 Input   34 Bit        Muxes := 4     
+	   2 Input   33 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 5     
+	   4 Input   32 Bit        Muxes := 9     
+	   4 Input   27 Bit        Muxes := 6     
+	   2 Input   26 Bit        Muxes := 4     
+	   4 Input   26 Bit        Muxes := 6     
+	   2 Input   25 Bit        Muxes := 307   
+	   2 Input   24 Bit        Muxes := 18    
+	   2 Input   23 Bit        Muxes := 736   
+	   3 Input   23 Bit        Muxes := 4     
+	   2 Input   22 Bit        Muxes := 8     
+	   2 Input   21 Bit        Muxes := 8     
+	   2 Input   20 Bit        Muxes := 9     
+	   2 Input   19 Bit        Muxes := 8     
+	   2 Input   18 Bit        Muxes := 8     
+	   2 Input   17 Bit        Muxes := 8     
+	   2 Input   16 Bit        Muxes := 36    
+	   6 Input   16 Bit        Muxes := 1     
+	   5 Input   16 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 8     
+	   2 Input   14 Bit        Muxes := 18    
+	   5 Input   14 Bit        Muxes := 4     
+	   2 Input   13 Bit        Muxes := 14    
+	   2 Input   12 Bit        Muxes := 40    
+	   4 Input   12 Bit        Muxes := 3     
+	   5 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 8     
+	  33 Input   11 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 12    
+	   2 Input    9 Bit        Muxes := 8     
+	   2 Input    8 Bit        Muxes := 61    
+	   3 Input    8 Bit        Muxes := 4     
+	   4 Input    8 Bit        Muxes := 4     
+	   5 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 8     
+	   4 Input    7 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 8     
+	   6 Input    6 Bit        Muxes := 2     
+	   4 Input    6 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 8     
+	   6 Input    5 Bit        Muxes := 9     
+	   2 Input    4 Bit        Muxes := 72    
+	   5 Input    4 Bit        Muxes := 4     
+	   6 Input    4 Bit        Muxes := 6     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 23    
+	  16 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 205   
+	   4 Input    2 Bit        Muxes := 5     
+	   7 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 8     
+	   5 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 522   
+	   4 Input    1 Bit        Muxes := 16    
+	   3 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP total_len_o_reg, operation Mode is: (A*B)'.
+DSP Report: register total_len_o_reg is absorbed into DSP total_len_o_reg.
+DSP Report: operator total_len_o0 is absorbed into DSP total_len_o_reg.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/ram_s2p1c_asic_inst/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/ram_s2p1c_asic_inst/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/ram_s2p1c_asic_inst/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 20 for RAM "inst/ram_s2p1c_asic_inst/ram_reg"
+WARNING: [Synth 8-3332] Sequential element (overflow_i_reg) is unused and will be removed from module flt_accum.
+WARNING: [Synth 8-3332] Sequential element (underflow_i_reg) is unused and will be removed from module flt_accum.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:45 ; elapsed = 00:01:53 . Memory (MB): peak = 3200.398 ; gain = 506.176 ; free physical = 480 ; free virtual = 12668
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2313.285; parent = 2180.125; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4187.645; parent = 3200.402; children = 987.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++----------------+------------+---------------+----------------+
+|Module Name     | RTL Object | Depth x Width | Implemented As | 
++----------------+------------+---------------+----------------+
+|flt_exp_ccm     | T_ROM_1    | 32x11         | LUT            | 
+|flt_exp_e2a     | T_ROM      | 1024x27       | LUT            | 
+|flt_exp_e2zmzm1 | T_ROM      | 64x6          | LUT            | 
+|flt_exp_ccm     | p_0_out    | 32x11         | LUT            | 
+|flt_exp_e2a     | p_0_out    | 1024x27       | LUT            | 
+|flt_exp_wrapper | p_0_out    | 64x6          | LUT            | 
+|flt_exp_ccm     | p_0_out    | 32x11         | LUT            | 
+|flt_exp_e2a     | p_0_out    | 1024x27       | LUT            | 
+|flt_exp_wrapper | p_0_out    | 64x6          | LUT            | 
+|flt_exp_ccm     | p_0_out    | 32x11         | LUT            | 
+|flt_exp_e2a     | p_0_out    | 1024x27       | LUT            | 
+|flt_exp_wrapper | p_0_out    | 64x6          | LUT            | 
+|flt_exp_ccm     | p_0_out    | 32x11         | LUT            | 
+|flt_exp_e2a     | p_0_out    | 1024x27       | LUT            | 
+|flt_exp_wrapper | p_0_out    | 64x6          | LUT            | 
++----------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+-----------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object                  | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+-----------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst        | ram_s2p1c_asic_inst/ram_reg | 1 K x 128(READ_FIRST)  | W |   | 1 K x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 4      | 1,1,1,1         | 
++------------+-----------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-----------------------------------+----------------+----------------------+----------------+
+|Module Name | RTL Object                        | Inference      | Size (Depth x Width) | Primitives     | 
++------------+-----------------------------------+----------------+----------------------+----------------+
+|inst        | acc_result_buf/data_reg           | User Attribute | 64 x 32              | RAM64M8 x 5    | 
+|inst        | width_convert_inst/buf_0/data_reg | User Attribute | 4 x 128              | RAM32M16 x 10  | 
+|inst        | result_buf_inst/data_reg          | User Attribute | 32 x 128             | RAM32M16 x 10  | 
++------------+-----------------------------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cmd_par_m   | (A*B)'      | 16     | 12     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:58 ; elapsed = 00:02:08 . Memory (MB): peak = 3614.664 ; gain = 920.441 ; free physical = 161 ; free virtual = 11211
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2526.007; parent = 2401.337; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4601.910; parent = 3614.668; children = 987.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:59 ; elapsed = 00:02:09 . Memory (MB): peak = 3619.664 ; gain = 925.441 ; free physical = 152 ; free virtual = 11097
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2526.007; parent = 2401.337; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4606.910; parent = 3619.668; children = 987.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+-----------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object                  | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+-----------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst        | ram_s2p1c_asic_inst/ram_reg | 1 K x 128(READ_FIRST)  | W |   | 1 K x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 4      | 1,1,1,1         | 
++------------+-----------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++------------+-----------------------------------+----------------+----------------------+----------------+
+|Module Name | RTL Object                        | Inference      | Size (Depth x Width) | Primitives     | 
++------------+-----------------------------------+----------------+----------------------+----------------+
+|inst        | acc_result_buf/data_reg           | User Attribute | 64 x 32              | RAM64M8 x 5    | 
+|inst        | width_convert_inst/buf_0/data_reg | User Attribute | 4 x 128              | RAM32M16 x 10  | 
+|inst        | result_buf_inst/data_reg          | User Attribute | 32 x 128             | RAM32M16 x 10  | 
++------------+-----------------------------------+----------------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:05 ; elapsed = 00:02:15 . Memory (MB): peak = 3671.742 ; gain = 977.520 ; free physical = 151 ; free virtual = 10222
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2526.007; parent = 2401.337; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4658.988; parent = 3671.746; children = 987.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:10 ; elapsed = 00:02:20 . Memory (MB): peak = 3674.711 ; gain = 980.488 ; free physical = 154 ; free virtual = 10077
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2526.007; parent = 2401.337; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4661.957; parent = 3674.715; children = 987.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:10 ; elapsed = 00:02:20 . Memory (MB): peak = 3674.711 ; gain = 980.488 ; free physical = 173 ; free virtual = 10033
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2526.007; parent = 2401.337; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4661.957; parent = 3674.715; children = 987.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:11 ; elapsed = 00:02:22 . Memory (MB): peak = 3674.711 ; gain = 980.488 ; free physical = 617 ; free virtual = 10477
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2526.007; parent = 2401.337; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4661.957; parent = 3674.715; children = 987.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:12 ; elapsed = 00:02:22 . Memory (MB): peak = 3674.711 ; gain = 980.488 ; free physical = 629 ; free virtual = 10491
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2526.007; parent = 2401.337; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4661.957; parent = 3674.715; children = 987.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:12 ; elapsed = 00:02:23 . Memory (MB): peak = 3674.711 ; gain = 980.488 ; free physical = 557 ; free virtual = 10421
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2526.007; parent = 2401.337; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4661.957; parent = 3674.715; children = 987.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:12 ; elapsed = 00:02:23 . Memory (MB): peak = 3674.711 ; gain = 980.488 ; free physical = 525 ; free virtual = 10397
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2526.007; parent = 2401.337; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4661.957; parent = 3674.715; children = 987.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                                                                                                                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][25]                                                                                       | 11     | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][24]                                                                                       | 13     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][22]                                                                                       | 12     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][18]                                                                                       | 10     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][16]                                                                                       | 9      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][14]                                                                                       | 8      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][12]                                                                                       | 7      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][10]                                                                                       | 6      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][8]                                                                                        | 5      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][6]                                                                                        | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][4]                                                                                        | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_div_exp/delay_normalize_up/delay[0].A_Delay_reg[0][0]                                                                                   | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_div_exp/delay_just_under_dec/delay[10].A_Delay_reg[10][0]                                                                               | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_div_exp/delay_state_dec/delay[10].A_Delay_reg[10][1]                                                                                    | 11     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_renorm_and_round_logic/delay_exp_op/delay[0].A_Delay_reg[0][7]                                                                          | 14     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/delay_sign_up/delay[15].A_Delay_reg[15][0]                                                                                                                    | 18     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][25]                                                                                       | 11     | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][24]                                                                                       | 13     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][22]                                                                                       | 12     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][18]                                                                                       | 10     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][16]                                                                                       | 9      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][14]                                                                                       | 8      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][12]                                                                                       | 7      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][10]                                                                                       | 6      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][8]                                                                                        | 5      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][6]                                                                                        | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][4]                                                                                        | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_div_exp/delay_normalize_up/delay[0].A_Delay_reg[0][0]                                                                                   | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_div_exp/delay_just_under_dec/delay[10].A_Delay_reg[10][0]                                                                               | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_div_exp/delay_state_dec/delay[10].A_Delay_reg[10][1]                                                                                    | 11     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_renorm_and_round_logic/delay_exp_op/delay[0].A_Delay_reg[0][7]                                                                          | 14     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][25]                                                                                       | 11     | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][24]                                                                                       | 13     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][22]                                                                                       | 12     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][18]                                                                                       | 10     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][16]                                                                                       | 9      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][14]                                                                                       | 8      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][12]                                                                                       | 7      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][10]                                                                                       | 6      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][8]                                                                                        | 5      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][6]                                                                                        | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][4]                                                                                        | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_div_exp/delay_normalize_up/delay[0].A_Delay_reg[0][0]                                                                                   | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_div_exp/delay_just_under_dec/delay[10].A_Delay_reg[10][0]                                                                               | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_div_exp/delay_state_dec/delay[10].A_Delay_reg[10][1]                                                                                    | 11     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_renorm_and_round_logic/delay_exp_op/delay[0].A_Delay_reg[0][7]                                                                          | 14     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][25]                                                                                       | 11     | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][24]                                                                                       | 13     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][22]                                                                                       | 12     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][18]                                                                                       | 10     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][16]                                                                                       | 9      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][14]                                                                                       | 8      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][12]                                                                                       | 7      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][10]                                                                                       | 6      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][8]                                                                                        | 5      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][6]                                                                                        | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_div_mant/delay_Q_MANT/delay[0].A_Delay_reg[0][4]                                                                                        | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_div_exp/delay_normalize_up/delay[0].A_Delay_reg[0][0]                                                                                   | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_div_exp/delay_just_under_dec/delay[10].A_Delay_reg[10][0]                                                                               | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_div_exp/delay_state_dec/delay[10].A_Delay_reg[10][1]                                                                                    | 11     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_renorm_and_round_logic/delay_exp_op/delay[0].A_Delay_reg[0][7]                                                                          | 14     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/scale_convert_offset_exp[0].fp_exp_inst/flt_exp_wrapper_inst/i_special_detect/overflow_delay_balance/delay[11].A_Delay_reg[11][0]                                           | 13     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/scale_convert_offset_exp[0].fp_exp_inst/flt_exp_wrapper_inst/i_special_detect/specialcase_delay_balance/delay[10].A_Delay_reg[10][1]                                        | 12     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/scale_convert_offset_exp[0].fp_exp_inst/flt_exp_wrapper_inst/i_shift_to_fixed/flt_shift_msb_first_flt_fix/genblk1[2].delay_dist_slice_del/genblk1[1].delay_1/delay_D_reg[0] | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/scale_convert_offset_exp[0].fp_exp_inst/flt_exp_wrapper_inst/i_Xi_at_op/delay[6].A_Delay_reg[6][7]                                                                          | 6      | 20    | NO           | NO                 | YES               | 20     | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/scale_convert_offset_exp[0].fp_exp_inst/flt_exp_wrapper_inst/i_Xi_at_op/delay[6].A_Delay_reg[6][3]                                                                          | 7      | 17    | NO           | NO                 | YES               | 17     | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/scale_convert_offset_exp[0].fp_exp_inst/flt_exp_wrapper_inst/i_Sx_at_Xi/delay[0].A_Delay_reg[0][0]                                                                          | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/scale_convert_offset_exp[1].fp_convert_inst/flt_fix_to_flt_conv_inst/OP/sign_op_reg                                                                                         | 5      | 6     | NO           | NO                 | YES               | 6      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_add_inst_0/flt_add_logic/flt_norm_and_round_logic/delay_zeros_del/delay[0].A_Delay_reg[0][0]                                                                             | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_add_inst_0/flt_add_logic/flt_add_exp/delay_ext_largest_exp_del/delay[2].A_Delay_reg[2][7]                                                                                | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_add_inst_0/flt_add_logic/flt_add_exp/delay_det_state_del/delay[3].A_Delay_reg[3][1]                                                                                      | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_add_inst_0/flt_add_logic/flt_add_exp/delay_lrg_almost_over_del/delay[2].A_Delay_reg[2][0]                                                                                | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_add_inst_1/flt_add_logic/flt_norm_and_round_logic/delay_zeros_del/delay[0].A_Delay_reg[0][0]                                                                             | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_add_inst_1/flt_add_logic/flt_add_exp/delay_ext_largest_exp_del/delay[2].A_Delay_reg[2][7]                                                                                | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_add_inst_1/flt_add_logic/flt_add_exp/delay_det_state_del/delay[3].A_Delay_reg[3][1]                                                                                      | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_add_inst_1/flt_add_logic/flt_add_exp/delay_lrg_almost_over_del/delay[2].A_Delay_reg[2][0]                                                                                | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_add_inst_2/flt_add_logic/flt_norm_and_round_logic/delay_zeros_del/delay[0].A_Delay_reg[0][0]                                                                             | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_add_inst_2/flt_add_logic/flt_add_exp/delay_ext_largest_exp_del/delay[2].A_Delay_reg[2][7]                                                                                | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_add_inst_2/flt_add_logic/flt_add_exp/delay_det_state_del/delay[3].A_Delay_reg[3][1]                                                                                      | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_add_inst_2/flt_add_logic/flt_add_exp/delay_lrg_almost_over_del/delay[2].A_Delay_reg[2][0]                                                                                | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_add_inst_2/delay_flt_add/delay[6].A_Delay_reg[6][0]                                                                                                                      | 14     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/scale_convert_offset_exp[0].fp_exp_inst/delay_sign_up/delay[13].A_Delay_reg[13][0]                                                                                          | 14     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/vector_last_d_reg[42]                                                                                                                                                       | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/vector_last_d_reg[34]                                                                                                                                                       | 35     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_acc_inst/flt_accum/flt_special_detect_A/delay_MANT_ALL_ZERO/delay[6].A_Delay_reg[6][0]                                                                                   | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_acc_inst/flt_accum/flt_special_detect_A/delay_EXP_ALL_ONE/delay[6].A_Delay_reg[6][0]                                                                                     | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_acc_inst/flt_accum/delay_normalize_ip/delay[0].A_Delay_reg[0][47]                                                                                                        | 3      | 48    | NO           | NO                 | YES               | 48     | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_acc_inst/flt_accum/delay_last_at_recomb/delay[6].A_Delay_reg[6][0]                                                                                                       | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_acc_inst/flt_accum/delay_rst_at_recomb/delay[6].A_Delay_reg[6][0]                                                                                                        | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_acc_inst/flt_accum/delay_input_is_overflow/delay[4].A_Delay_reg[4][0]                                                                                                    | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_acc_inst/flt_accum/delay_valid_at_recomb/delay[1].A_Delay_reg[1][0]                                                                                                      | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_0/flt_div_wrapper_u/flt_dec_op_lat/sign_op_reg                                                                                                                  | 15     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_1/flt_div_wrapper_u/flt_dec_op_lat/sign_op_reg                                                                                                                  | 15     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_2/flt_div_wrapper_u/flt_dec_op_lat/sign_op_reg                                                                                                                  | 15     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/softmax_calc_m_inst/fp_div_inst_3/flt_div_wrapper_u/flt_dec_op_lat/sign_op_reg                                                                                                                  | 15     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sfm_xrt_top | softmax_top_inst/cmd_par_m_inst/cmd_done_clr_d_reg[2]                                                                                                                                                            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                             | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cmd_par_m                               | (A'*B)'           | 16     | 12     | -      | -      | 20     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|flt_dsp48e2_wrapper__parameterized0     | Dynamic           | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|flt_dsp48e2_wrapper__parameterized0_558 | Dynamic           | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|flt_dsp48e2_wrapper__parameterized1     | Dynamic           | -      | -      | -      | -      | 2      | -    | -    | -    | -    | -     | 0    | 1    | 
+|flt_dsp48e2_wrapper_151                 | (C'+(D'+A'*B')')' | 6      | 17     | 43     | 16     | 43     | 1    | 1    | 1    | 1    | 0     | 1    | 1    | 
+|flt_dsp48e2_wrapper_90                  | (C'+(D'+A'*B')')' | 6      | 17     | 43     | 16     | 43     | 1    | 1    | 1    | 1    | 0     | 1    | 1    | 
+|flt_dsp48e2_wrapper_29                  | (C'+(D'+A'*B')')' | 6      | 17     | 43     | 16     | 43     | 1    | 1    | 1    | 1    | 0     | 1    | 1    | 
+|flt_dsp48e2_wrapper                     | (C'+(D'+A'*B')')' | 6      | 17     | 43     | 16     | 43     | 1    | 1    | 1    | 1    | 0     | 1    | 1    | 
++----------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |   663|
+|2     |DSP_ALU         |     8|
+|4     |DSP_A_B_DATA    |     8|
+|7     |DSP_C_DATA      |     8|
+|9     |DSP_MULTIPLIER  |     8|
+|12    |DSP_M_DATA      |     8|
+|14    |DSP_OUTPUT      |     8|
+|15    |DSP_PREADD      |     8|
+|16    |DSP_PREADD_DATA |     8|
+|19    |LUT1            |   370|
+|20    |LUT2            |  1201|
+|21    |LUT3            |  3459|
+|22    |LUT4            |   991|
+|23    |LUT5            |  1082|
+|24    |LUT6            |  3618|
+|25    |MUXF7           |   703|
+|26    |MUXF8           |   348|
+|27    |RAM32M16        |    18|
+|28    |RAM32X1D        |     4|
+|29    |RAM64M8         |     5|
+|30    |RAMB36E2        |     4|
+|31    |SRL16E          |   302|
+|32    |SRLC32E         |     3|
+|33    |FDRE            |  7655|
+|34    |FDSE            |    69|
+|35    |LD              |     3|
+|36    |LDP             |     1|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:12 ; elapsed = 00:02:23 . Memory (MB): peak = 3674.711 ; gain = 980.488 ; free physical = 517 ; free virtual = 10390
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2526.007; parent = 2401.337; children = 136.786
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4661.957; parent = 3674.715; children = 987.242
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:05 ; elapsed = 00:02:15 . Memory (MB): peak = 3674.711 ; gain = 867.828 ; free physical = 494 ; free virtual = 10380
+Synthesis Optimization Complete : Time (s): cpu = 00:02:12 ; elapsed = 00:02:23 . Memory (MB): peak = 3674.719 ; gain = 980.488 ; free physical = 441 ; free virtual = 10332
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.25 . Memory (MB): peak = 3674.719 ; gain = 0.000 ; free physical = 665 ; free virtual = 10675
+INFO: [Netlist 29-17] Analyzing 1753 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3718.336 ; gain = 0.000 ; free physical = 879 ; free virtual = 10902
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
+  LD => LDCE: 3 instances
+  LDP => LDPE: 1 instance 
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 18 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 5 instances
+
+Synth Design complete, checksum: 44e4b482
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:27 ; elapsed = 00:02:37 . Memory (MB): peak = 3718.336 ; gain = 1919.379 ; free physical = 1119 ; free virtual = 11156
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.runs/design_1_sfm_xrt_top_1_0_synth_1/design_1_sfm_xrt_top_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_sfm_xrt_top_1_0, cache-ID = bda1998163742823
+INFO: [Coretcl 2-1174] Renamed 737 cell refs.
+INFO: [Common 17-1381] The checkpoint '/media/logictronix/ML_WORKSPACE/Abhidan/Platforms/Workspace/zcu102_dpu_vitis/dpu_system_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.runs/design_1_sfm_xrt_top_1_0_synth_1/design_1_sfm_xrt_top_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_sfm_xrt_top_1_0_utilization_synth.rpt -pb design_1_sfm_xrt_top_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 19 13:29:41 2023...
