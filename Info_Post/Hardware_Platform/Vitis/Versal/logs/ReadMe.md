@@ -1,0 +1,1 @@
+These Versal Platform Creation Log are generated while following the command and GUI approach of Vitis Platfomr Creation : https://github.com/Xilinx/Vitis-Tutorials/tree/2023.1/Getting_Started/Vitis_Platform
