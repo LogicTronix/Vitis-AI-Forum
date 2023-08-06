@@ -1,0 +1,95 @@
+�[0.016]****************************************
+[0.049]Xilinx Versal Platform Loader and Manager 
+[0.083]Release 2023.1   Jul 12 2023  -  10:24:12
+[0.119]Platform Version: v2.0 PMC: v2.0, PS: v2.0
+[0.161]BOOTMODE: 0xE, MULTIBOOT: 0xF0000000
+[0.196]****************************************
+[0.410]Non Secure Boot
+[3.312]PLM Initialization Time 
+[3.340]***********Boot PDI Load: Started***********
+[3.380]Loading PDI from SD1_LS
+[3.408]Monolithic/Master Device
+[397.391]394.002 ms: PDI initialization time
+[397.431]+++Loading Image#: 0x1, Name: lpd, Id: 0x04210002
+[397.480]---Loading Partition#: 0x1, Id: 0xC
+[450.639] 53.110 ms for Partition#: 0x1, Size: 3136 Bytes
+[455.583]---Loading Partition#: 0x2, Id: 0xB
+[498.454] 38.952 ms for Partition#: 0x2, Size: 64112 Bytes
+[500.934]+++Loading Image#: 0x2, Name: pl_cfi, Id: 0x18700000
+[506.111]---Loading Partition#: 0x3, Id: 0x3
+[1113.259] 603.227 ms for Partition#: 0x3, Size: 978016 Bytes
+[1115.814]---Loading Partition#: 0x4, Id: 0x5
+[1947.267] 827.450 ms for Partition#: 0x4, Size: 1322368 Bytes
+[1949.918]+++Loading Image#: 0x3, Name: aie_subsys, Id: 0x0421C005
+[1955.688]---Loading Partition#: 0x5, Id: 0x7
+[1964.697] 5.007 ms for Partition#: 0x5, Size: 672 Bytes
+[1966.837]+++Loading Image#: 0x4, Name: fpd, Id: 0x0420C003
+[1972.013]---Loading Partition#: 0x6, Id: 0x8
+[1979.197] 3.183 ms for Partition#: 0x6, Size: 1616 Bytes
+[1981.697]+++Loading Image#: 0x5, Name: default_subsys, Id: 0x1C000000
+[1987.530]---Loading Partition#: 0x7, Id: 0x0
+[2004.818] 13.287 ms for Partition#: 0x7, Size: 20496 Bytes
+[2007.203]---Loading Partition#: 0x8, Id: 0x0
+[2049.889] 38.685 ms for Partition#: 0x8, Size: 63440 Bytes
+[2052.275]---Loading Partition#: 0x9, Id: 0x0
+[2676.347] 620.069 ms for Partition#: 0x9, Size: 1086816 Bytes
+[2T7C.034T*-********gBoot PDI Loadl Done***********
+[2683.502]450.721 ms: ROM Time
+[2686.215]Total PLM Boot Time 
+INFO:    BL31: GET_HANDOFF_PARAMS call success=0
+INFO:    BL31: PLM to TF-A handover success 0
+NOTICE:  BL31: Secure code at 0x0
+NOTICE:  BL31: Non secure code at 0x8000000
+NOTICE:  BL31: v2.8(debug):v1.1-11126-gc9b71dc96
+NOTICE:  BL31: Built : 09:24:17, Apr 12 2023
+INFO:    GICv3 with legacy support detected.
+INFO:    ARM GICv3 driver initialized in EL3
+INFO:    Maximum SPI INTID supported: 191
+INFO:    BL31: Initializing runtime services
+INFO:    BL31: cortex_a72: CPU workaround for 859971 was applied
+INFO:    BL31: cortex_a72: CPU workaround for 1319367 was applied
+INFO:    BL31: cortex_a72: CPU workaround for cve_2017_5715 was applied
+INFO:    BL31: cortex_a72: CPU workaround for cve_2018_3639 was applied
+INFO:    BL31: cortex_a72: CPU workaround for cve_2022_23960 was applied
+INFO:    BL31: Preparing for EL3 exit to normal world
+INFO:    Entry point address = 0x8000000
+INFO:    SPSR = 0x3c9
+
+
+U-Boot 2023.01 (Mar 29 2023 - 13:08:40 +0000)
+
+CPU:   Versal
+Silicon: v2
+Chip:  v2
+Model: Xilinx Versal vck190 Eval board revA (EMMC)
+DRAM:  2 GiB (effective 16 GiB)
+EL Level:	EL2
+Core:  42 devices, 21 uclasses, devicetree: board
+MMC:   mmc@f1050000: 0
+Loading Environment from FAT... *** Error - No Valid Environment Area found
+*** Warning - bad env area, using default environment
+
+In:    serial@ff000000
+Out:   serial@ff000000
+Err:   serial@ff000000
+Bootmode: LVL_SHFT_SD_MODE1
+Net:   
+ZYNQ GEM: ff0c0000, mdio bus ff0c0000, phyaddr 1, interface rgmii-id
+
+Warning: ethernet@ff0c0000 (eth0) using random MAC address - b2:95:b8:fc:c6:16
+eth0: ethernet@ff0c0000Get shared mii bus on ethernet@ff0d0000
+
+ZYNQ GEM: ff0d0000, mdio bus ff0c0000, phyaddr 2, interface rgmii-id
+
+Warning: ethernet@ff0d0000 (eth1) using random MAC address - a6:9a:95:a9:6d:35
+, eth1: ethernet@ff0d0000
+Hit any key to stop autoboot:  0 
+switch to partitions #0, OK
+mmc0 is current device
+Scanning mmc 0:1...
+Found U-Boot script /boot.scr
+3015 bytes read in 15 ms (196.3 KiB/s)
+## Executing script at 20000000
+Trying to load boot images from mmc0
+[8686.135]PMC EAM ERR1: 0x20000
+[8688.969]Received EAM error. ErrorNodeId: 0x28100000, Register Mask: 0x20000. The corresponding Error ID: 0x11

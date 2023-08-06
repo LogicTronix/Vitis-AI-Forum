@@ -1,0 +1,40 @@
+versal-rootfs-common-20231:~$ sudo /run/media/mmcblk0p1/vadd_host
+Usage: /run/media/mmcblk0p1/vadd_host <xclbin>
+versal-rootfs-common-20231:~$ sudo /run/media/mmcblk0p1/vadd_host /run/media/mmcblk0p1/binary_container_1.xclbin
+[  384.983932] zocl-drm amba_pl@0:zyxclmm_drm: zocl_create_client: created KDS client for pid(683), ret: 0
+[  384.993360] zocl-drm amba_pl@0:zyxclmm_drm: zocl_destroy_client: client exits pid(683)
+INFO: Reading /run/media/mmcblk0p1/binary_container_1.xclbin
+Loading: '/run/media/mmcblk0p1/binary_container_1.xclbin'
+[  385.322445] zocl-drm amba_pl@0:zyxclmm_drm: zocl_create_client: created KDS client for pid(683), ret: 0
+[  385.331949] zocl-drm amba_pl@0:zyxclmm_drm: zocl_destroy_client: client exits pid(683)
+[  385.348320] zocl-drm amba_pl@0:zyxclmm_drm: zocl_create_client: created KDS client for pid(683), ret: 0
+Trying to program device[0]: edge
+[  385.389181] [drm] Loading xclbin 0b0716b5-8d91-f534-281d-731561f94b09 to slot 0
+[  385.389194] [drm] skip kind 29(AIE_RESOURCES) return code: -22
+[  385.396526] [drm] found kind 8(IP_LAYOUT)
+[  385.402380] [drm] found kind 9(DEBUG_IP_LAYOUT)
+[  385.406398] [drm] skip kind 25(AIE_METADATA) return code: -22
+[  385.410931] [drm] found kind 7(CONNECTIVITY)
+[  385.416676] [drm] found kind 6(MEM_TOPOLOGY)
+[  385.420998] [drm] Memory 0 is not reserved in device tree. Will allocate memory from CMA
+[  385.433365] [drm] Memory 1 is not reserved in device tree. Will allocate memory from CMA
+[  385.441481] [drm] Memory 2 is not reserved in device tree. Will allocate memory from CMA
+[  385.449865] zocl_irq_intc ZOCL_CU_INTC.2.auto: zocl_irq_intc_add: managing IRQ 42
+[  385.457436] cu_drv CU.3.auto: cu_probe: CU[0] created
+[  385.462837] [drm] zocl_xclbin_read_axlf 0b0716b5-8d91-f534-281d-731561f94b09 ret: 0
+[  385.464155] cu_drv CU.3.auto:  ffff000801771c10 xrt_cu_intr_thread: CU[0] start
+[  385.489174] [drm] bitstream 0b0716b5-8d91-f534-281d-731561f94b09 locked, ref=1
+[  385.489211] zocl-drm amba_pl@0:zyxclmm_drm:  ffff000800857810 kds_add_context: Client pid(683) add context Domain(65535) CU(0xffff) shared(true)
+[  385.509430] zocl-drm amba_pl@0:zyxclmm_drm:  ffff000800857810 kds_del_context: Client pid(683) del context Domain(65535) CU(0xffff)
+[  385.521270] [drm] bitstream 0b0716b5-8d91-f534-281d-731561f94b09 unlocked, ref=0
+[  385.526767] [drm] bitstream 0b0716b5-8d91-f534-281d-731561f94b09 locked, ref=1
+[  385.534205] zocl-drm amba_pl@0:zyxclmm_drm:  ffff000800857810 kds_add_context: Client pid(683) add context Domain(65535) CU(0xffff) shared(true)
+Device[0]: program successful!
+[  385.558915] zocl-drm amba_pl@0:zyxclmm_drm:  ffff000800857810 kds_add_context: Client pid(683) add context Domain(0) CU(0x0) shared(true)
+TEST PASSED
+[  385.574049] zocl-drm amba_pl@0:zyxclmm_drm:  ffff000800857810 kds_del_context: Client pid(683) del context Domain(0) CU(0x0)
+[  385.586544] zocl-drm amba_pl@0:zyxclmm_drm:  ffff000800857810 kds_del_context: Client pid(683) del context Domain(65535) CU(0xffff)
+[  385.598386] [drm] bitstream 0b0716b5-8d91-f534-281d-731561f94b09 unlocked, ref=0
+[  385.610385] zocl-drm amba_pl@0:zyxclmm_drm: zocl_destroy_client: client exits pid(683)
+versal-rootfs-common-20231:~$ 
+
